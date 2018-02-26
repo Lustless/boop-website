@@ -12,6 +12,8 @@ p {
   font-weight: regular;
   text-align: left;
   margin-bottom: 0px;
+  margin-top: 0px;
+  line-height: 24px;
 }
 
 h1 {
@@ -20,6 +22,7 @@ h1 {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: bold;
   margin-bottom: 15px;
+  margin-top: 0px;
 }
 
 .vertically-centered-flexbox {
@@ -36,6 +39,7 @@ h1 {
 .header-text {
   color: var(--boop-color);
   font-size: 18px;
+  font-weight: bold;
   font-family: 'Source Sans Pro', sans-serif;
   text-align: center;
 }
@@ -43,10 +47,6 @@ h1 {
 .super-grid {
   display: grid;
   position: relative;
-}
-
-.first-grid {
-  width: 100%;
 }
 
 .another-full-bleed {
@@ -138,12 +138,32 @@ input:checked + .super-grid .main .twelve-column-grid {
   height: 473px;
 }
 
-.image {
+.about-us-image {
   grid-column: 1/7;
   background-color: black;
 }
 
-.text {
+.our-mission-image {
+  grid-column: 7/13;
+  background-color: black;
+}
+
+.about-us-text {
   grid-column: 8/13;
   text-align: left;
+}
+
+.our-mission-text {
+  grid-column: 1/6;
+  text-align: left;
+}
+
+.section-space {
+  height: 160px;
+  width: 100%;
+}
+
+.space {
+  height: 80px;
+  width: 100%;
 }
