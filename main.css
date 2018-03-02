@@ -26,6 +26,9 @@
   --body-text-color: #4A4A4A;
 }
 
+.booper-color {
+  color: var(--booper-color);
+}
 
 p {
   color: var(--body-text-color);
@@ -87,6 +90,7 @@ b {
 }
 .sections > .services-sections > .services-section-components {
   display: grid;
+    grid-row-gap: 80px;
 }
 .sections > .recruitment-sections {
   display: grid;
@@ -250,20 +254,20 @@ input:checked + .super-grid .twelve-column-grid-overlay {
   align-self: center;
 }
 
-.zakum {
+.bossing-section {
   grid-template-columns: 50% 50%;
   grid-gap: 55px;
 }
-.zakum-gif {
+.bossing-gif {
   height: 100px;
   background-color: black;
   align-self: start;
   justify-self: end;
-  width: 200px;
-  height: 100px;
+  width: 250px;
+  height: 200px;
 }
 
-.zakum-info h1{
+.bossing-prices h1{
   color: #4a4a4a;
   text-align: left;
   text-weight: semibold;
@@ -283,4 +287,10 @@ input:checked + .super-grid .twelve-column-grid-overlay {
   line-height: 31px;
   text-align: left;
   margin-bottom: 13px;
+}
+
+.specific-prices {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 5px;
 }
