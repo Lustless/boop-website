@@ -62,7 +62,6 @@ b {
   display: grid;
   position: relative;
   grid-template-columns: 1fr;
-  grid-row-gap: 160px;
   grid-auto-rows: minmax(100px, auto);
 }
 .master-container > .header {
@@ -84,6 +83,7 @@ b {
 }
 .sections > .services-sections {
   display: grid;
+  grid-row-gap: 80px;
 }
 .sections > .services-sections > .services-section-components {
   display: grid;
@@ -110,55 +110,6 @@ b {
 }
 
 
-
-.new-section-intro {
-  grid-column: 3/12;
-}
-
-.new-section-intro,
-.new-section-intro p {
-  text-align: center;
-}
-
-
-
-.introduction {
-  grid-column: 1/13;
-  height: 473px;
-}
-
-.about-us-image {
-  grid-column: 1/7;
-  background-color: black;
-}
-
-.our-mission-image {
-  grid-column: 7/13;
-  background-color: purple;
-}
-
-.about-us-text {
-  grid-column: 8/13;
-  text-align: left;
-}
-
-.our-mission-text {
-  grid-column: 1/6;
-  text-align: left;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 .twelve-column-grid-overlay {
   display: grid;
   grid-template-columns: repeat(12,1fr);
@@ -168,17 +119,13 @@ b {
   max-width: 1200px;
 }
 
-.vertically-centered-flexbox {
-  display: flex;
-  align-items: center;
-}
-
 
 
 .header {
   align: center;
   grid-column: 1/13;
 }
+
 .header-text {
   color: var(--boop-color);
   font-size: 18px;
@@ -263,4 +210,77 @@ input:checked + .super-grid .twelve-column-grid-overlay {
   display: grid;
   justify-content: center;
   width: 100%;
+}
+
+.new-section-intro {
+  grid-column: 3/12;
+}
+
+.new-section-intro,
+.new-section-intro p {
+  text-align: center;
+}
+
+
+
+.introduction {
+  grid-column: 1/13;
+  height: 473px;
+}
+
+.about-us-image {
+  grid-column: 1/7;
+  background-color: black;
+}
+
+.our-mission-image {
+  grid-column: 7/13;
+  background-color: purple;
+}
+
+.about-us-text {
+  grid-column: 8/13;
+  text-align: left;
+  align-self: center;
+}
+
+.our-mission-text {
+  grid-column: 1/6;
+  text-align: left;
+  align-self: center;
+}
+
+.zakum {
+  grid-template-columns: 50% 50%;
+  grid-gap: 55px;
+}
+.zakum-gif {
+  height: 100px;
+  background-color: black;
+  align-self: start;
+  justify-self: end;
+  width: 200px;
+  height: 100px;
+}
+
+.zakum-info h1{
+  color: #4a4a4a;
+  text-align: left;
+  text-weight: semibold;
+  margin-bottom: 3px;
+}
+
+.prices {
+  border-top: 1px solid #979797;
+  border-bottom: 1px solid #979797;
+  width: 307px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 307px;
+  color: #FF7BA5;
+  font-family: "Source Sans Pro";
+  font-size: 24px;
+  line-height: 31px;
+  text-align: left;
+  margin-bottom: 13px;
 }
