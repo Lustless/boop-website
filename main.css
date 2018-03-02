@@ -198,15 +198,6 @@ b {
   background-image: url("https://cdn.wallpapersafari.com/88/24/yomfKZ.jpeg");
 }
 
-.grid-config { /* makes something have a 12 column grid */
-    display: grid;
-    grid-template-columns: repeat(12,1fr);
-    grid-auto-rows: minmax(100px, auto);
-    grid-column-gap: 20px;
-    grid-row-gap: 10px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
 
 .main {
 margin: 0 auto;
@@ -268,9 +259,7 @@ input:checked + .super-grid .twelve-column-grid-overlay {
   width: 100%
 }
 
-
-
-.old-solution {
+.grid-centering {
   display: grid;
   justify-content: center;
   width: 100%;
