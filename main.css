@@ -94,6 +94,7 @@ b {
 }
 .sections > .recruitment-sections {
   display: grid;
+  grid-row-gap: 30px;
 }
 .sections > .alliances-sections {
   display: grid;
@@ -217,7 +218,7 @@ input:checked + .super-grid .twelve-column-grid-overlay {
 }
 
 .new-section-intro {
-  grid-column: 3/12;
+  grid-column: 3/11;
 }
 
 .new-section-intro,
@@ -260,11 +261,15 @@ input:checked + .super-grid .twelve-column-grid-overlay {
 }
 .bossing-gif {
   height: 100px;
-  background-color: black;
   align-self: start;
   justify-self: end;
   width: 250px;
   height: 200px;
+}
+.bossing-gif img {
+  height: 100%;
+  width: 100%;
+  transform: scaleX(-1);
 }
 
 .bossing-prices h1{
@@ -293,4 +298,32 @@ input:checked + .super-grid .twelve-column-grid-overlay {
   display: grid;
   grid-template-columns: 1fr;
   grid-row-gap: 5px;
+}
+
+.berry-icon {
+  grid-column: 2/3;
+  background-color: black;
+  width: 75px;
+  height: 75px;
+  display: grid;
+}
+
+
+
+.recruitment-title {
+color: var(--boop-color);
+font-size: 24px;
+font-weight: bold;
+line-height: 31px;
+}
+
+.recruitment-text {
+  grid-column: 3/12;
+}
+
+.guilds {
+  grid-column: 1/13;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 30px;
 }
