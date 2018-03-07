@@ -180,11 +180,6 @@ b {
   width: 100%;
 }
 
-.another-full-bleed {
-  width: 100%;
-  background-image: url("https://cdn.wallpapersafari.com/88/24/yomfKZ.jpeg");
-}
-
 input:checked + .overlay-container > .twelve-column-grid-overlay {
   display: grid;
 }
@@ -252,20 +247,32 @@ input:checked + .overlay-container > .twelve-column-grid-overlay {
   height: 100px;
   align-self: start;
   justify-self: end;
-  width: 250px;
+  width: 300px;
   height: 200px;
+  margin-right: 0px;
 }
+
 .bossing-gif img {
-  height: 100%;
-  width: 100%;
+  max-height: 200px;
+  max-width: 300px;
   transform: scaleX(-1);
+}
+
+.bossing-gif.scarlion img {
+  transform: scale(1.4);
+  height: 150px;
+}
+
+.bossing-gif.horntail img {
+  transform: scale(1.3);
+  margin-left: 50px;
 }
 
 .bossing-prices h1 {
   color: #4a4a4a;
   text-align: left;
   text-weight: semibold;
-  margin-bottom: 3px;
+  margin-bottom: 5px;
 }
 
 .prices {
@@ -484,4 +491,71 @@ hr {
 
 .member-card.lustless h3 {
   color: var(--booper-color);
+}
+
+.footer {
+  background-color: #DBF3FF;
+  height: 500px;
+  background-repeat: repeat;
+  background-image: url("https://image.ibb.co/frFboS/Boop_and_Booper_Pattern_small.png");
+}
+
+.footer-card-area {
+  grid-column: 4/10;
+  background-color: var(--boop-color);
+  margin: auto 0;
+  border-radius: 10px;
+  padding: 50px;
+}
+
+.footer-content {
+  align-self: center;
+}
+
+.footer-card-area h1 {
+  color: white;
+  text-align: center;
+}
+
+.footer-card-area p {
+  color: white;
+  text-align: center;
+}
+
+.footer-content button {
+  background-color: white;
+  text-align: center;
+  color: var(--boop-color);
+  border-radius: 27px;
+  width: 200px;
+  height: 54px;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-top: 20px;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+}
+.footer-area {
+  height: 500px;
+}
+
+.end-footer-color {
+  height: 35px;
+}
+
+.end-footer-color.boop {
+  background-color: var(--boop-color);
+}
+
+.end-footer-color.booper {
+  background-color: var(--booper-color);
+}
+
+.end-footer-color.boopest {
+  background-color: #C68BFF;
 }
