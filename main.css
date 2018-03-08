@@ -84,7 +84,7 @@ b {
   display: grid;
   position: relative;
   grid-template-columns: 1fr;
-  grid-auto-rows: minmax(100px, auto);
+  grid-auto-rows: minmax(auto, auto);
   width: 100%;
 }
 .master-container > .header {
@@ -180,15 +180,72 @@ b {
   width: 100%;
 }
 
+.overlay-checkbox {
+  display: none;
+}
+
 input:checked + .overlay-container > .twelve-column-grid-overlay {
   display: grid;
 }
 
-.full-bleed {
-  display: grid;
-  height: 500px;
-  background-color: red;
+.nav-bar button {
+  color: var(--boop-color);
+  font-family: 'Source Sans Pro';
+  font-size: 18px;
+  font-weight: bold;
+  border: 0px transparent;
+  width: 140px;
+  margin-top: 20px;
+}
+
+.landing-background {
+  background-color: #F4F7F8;
+  height: 400px;
+  background-repeat: repeat;
+  background-image: url("https://image.ibb.co/frFboS/Boop_and_Booper_Pattern_small.png");
+  margin-top: 160px;
+  margin-bottom: 160px;
+}
+
+.floating-strawberries {
+  position: relative;
+}
+
+.floating-strawberries-container {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: -55px;
   width: 100%;
+}
+
+.floating-strawberries-container img.left {
+  margin-right: 25px;
+  height: 140px;
+}
+
+.floating-strawberries-container img.right {
+  transform: scaleX(-1);
+  height: 120px;
+}
+
+.nav-message {
+  width: 885px;
+  height: 140px;
+  border-radius: 70px;
+  background-color: white;
+  box-shadow: 0 6px 10px 0 rgba(215,215,215,0.5);
+  font-family: 'Source Sans Pro';
+  font-size: 64px;
+  font-weight: bold;
+  text-align: center;
+  margin: auto auto;
+  line-height: 136px;
+  color: var(--boop-color);
+  margin-top: 90px;
+}
+
+.nav-message span {
+  color: var(--booper-color);
 }
 
 
@@ -519,7 +576,7 @@ hr {
   background-color: #DBF3FF;
   height: 500px;
   background-repeat: repeat;
-  background-image: url("https://image.ibb.co/frFboS/Boop_and_Booper_Pattern_small.png");
+  background-image: url("http://i68.tinypic.com/25iq5h1.png");
 }
 
 .footer-card-area {
