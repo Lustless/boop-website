@@ -220,6 +220,11 @@ input:checked + .overlay-container > .twelve-column-grid-overlay {
 .about-us-image {
   grid-column: 1/7;
   background-color: black;
+  background-image: url("https://media.giphy.com/media/XIOPwyK8C4bJFsu2PV/giphy.gif");
+  background-size: auto 100%;
+  background-position: center;
+  overflow: hidden;
+  background-repeat; none;
 }
 
 .our-mission-image {
@@ -298,10 +303,7 @@ input:checked + .overlay-container > .twelve-column-grid-overlay {
 
 .berry-icon {
   grid-column: 2/3;
-  background-color: black;
-  width: 75px;
-  height: 75px;
-  display: grid;
+  filter: saturate(115%);
 }
 
 
@@ -454,8 +456,28 @@ hr {
   height: 221px;
   width: 221px;
   text-align: center;
-  background-color: lightgrey;
   margin: 0 auto;
+  background-size: auto 100%;
+  background-position: center;
+  overflow: hidden;
+  background-repeat; none;
+  filter: saturate(125%);
+}
+
+.member-image.flora {
+  background-image: url("https://maplelegends.com/avatar/create.php?name=Flora");
+}
+
+.member-image.katrinaa {
+  background-image: url("https://maplelegends.com/avatar/create.php?name=Katrinaa");
+}
+
+.member-image.cliint {
+  background-image: url("https://maplelegends.com/avatar/create.php?name=Cliint");
+}
+
+.member-image.lustless {
+  background-image: url("https://maplelegends.com/avatar/create.php?name=Lustless");
 }
 
 .member-card {
