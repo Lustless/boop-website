@@ -1,111 +1,3 @@
-:root {
-  --boop-color: #70CBFA;
-  --booper-color: #FF7BA5;
-  --body-text-color: #4A4A4A;
-}
-
-
-p {
-  color: var(--body-text-color);
-  font-size: 18px;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: regular;
-  text-align: left;
-  margin-bottom: 0px;
-}
-
-h1 {
-  color: var(--boop-color);
-  font-size: 36px;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-
-.vertically-centered-flexbox {
-  display: flex;
-  align-items: center;
-}
-
-
-
-.header {
-  align: center;
-  grid-column: 1/13;
-}
-.header-text {
-  color: var(--boop-color);
-  font-size: 18px;
-  font-family: 'Source Sans Pro', sans-serif;
-  text-align: center;
-}
-
-.super-grid {
-  display: grid;
-  position: relative;
-}
-
-.first-grid {
-  width: 100%;
-}
-
-.another-full-bleed {
-  width: 100%;
-  background-image: url("https://cdn.wallpapersafari.com/88/24/yomfKZ.jpeg");
-}
-
-.grid-config {
-    display: grid;
-    grid-template-columns: repeat(12,1fr);
-    grid-auto-rows: minmax(100px, auto);
-    grid-column-gap: 20px;
-    grid-row-gap: 10px;
-    max-width: 1200px;
-}
-
-.main {
-  text-align: center;
-  margin: 0 auto;
-  position: relative;
-}
-
-.overlay-container {
-  width: 100%;
-}
-
-.twelve-column-grid {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 1000000px;
-  background: transparent;
-  padding: 0;
-  display: none;
-  z-index: 50;
-}
-
-input:checked + .super-grid .main .twelve-column-grid {
-  display: grid;
-}
-
-.full-bleed {
-  display: grid;
-  height: 500px;
-  background-color: red;
-  width: 100%;
-}
-
-.main > .twelve-column-grid {
-  background: transparent;
-}
-
-.twelve-column-grid p {
-  border: 1px solid white;
-  background: black;
-  margin: 0;
-  opacity: 0.2;
-}
 
 .thing-1 {
   grid-column: 1/13;
@@ -125,25 +17,624 @@ input:checked + .super-grid .main .twelve-column-grid {
   grid-row: 4/6;
 }
 
-.main > div {
-  background-color: blue;
+
+
+
+:root {
+  --boop-color: #70CBFA;
+  --booper-color: #FF7BA5;
+  --body-text-color: #4A4A4A;
 }
 
-.main div:nth-child(even) {
-  background-color: grey;
+.booper-color {
+  color: var(--booper-color);
 }
+
+p {
+  color: var(--body-text-color);
+  font-size: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: regular;
+  text-align: left;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  line-height: 24px;
+}
+
+h1 {
+  color: var(--boop-color);
+  font-size: 36px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  margin-bottom: 15px;
+  margin-top: 0px;
+}
+
+h2 {
+  color: var(--body-text-color);
+  font-size: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 3px;
+}
+
+h3 {
+  font-size: 24px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: Bold;
+  margin-top: 0px;
+  line-height: 31px;
+  margin-bottom: 10px;
+}
+
+b {
+  color: var(--body-text-color);
+  font-size: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  line-height: 24px;
+}
+
+.master-container {
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(auto, auto);
+  width: 100%;
+}
+.master-container > .header {
+  display: grid;
+  text-align: center;
+}
+.master-container > .sections {
+  display: grid;
+  grid-row-gap: 160px;
+}
+
+/*.sections > div {
+  background-color: lightgreen; /* TEMPORARY TO HELP SEE SIZE BETTER */
+
+
+.sections > .introduction-sections {
+  display: grid;
+  grid-row-gap: 80px;
+}
+.sections > .introduction-sections > .introduction-section {
+  display: grid;
+}
+.sections > .services-sections {
+  display: grid;
+  grid-row-gap: 80px;
+}
+.sections > .services-sections > .services-section-components {
+  display: grid;
+    grid-row-gap: 80px;
+}
+.sections > .recruitment-sections {
+  display: grid;
+  grid-row-gap: 80px;
+}
+
+.sections > .recruitment-sections > .recruitment-section-components{
+  display: grid;
+  grid-row-gap: 80px;
+  margin-bottom: 80px;
+}
+
+.sections > .alliances-sections {
+  display: grid;
+  grid-row-gap: 40px;
+}
+
+.sections > .members-sections {
+  display: grid;
+  grid-row-gap: 80px;
+}
+.master-container > .footer {
+  display: grid;
+}
+.twelve-column-grid { /* makes something have a 12 column grid */
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-column-gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.twelve-column-grid-overlay {
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+  max-width: 1200px;
+}
+
+
+
+.header {
+  align: center;
+  grid-column: 1/13;
+}
+
+.header-text {
+  color: var(--boop-color);
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+}
+
+.super-grid {
+  display: grid;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.overlay-checkbox {
+  display: none;
+}
+
+input:checked + .overlay-container > .twelve-column-grid-overlay {
+  display: grid;
+}
+
+.nav-bar button {
+  color: var(--boop-color);
+  font-family: 'Source Sans Pro';
+  font-size: 18px;
+  font-weight: bold;
+  border: 0px transparent;
+  width: 140px;
+  margin-top: 20px;
+}
+
+.landing-background {
+  background-color: #F4F7F8;
+  height: 400px;
+  background-repeat: repeat;
+  background-image: url("https://image.ibb.co/frFboS/Boop_and_Booper_Pattern_small.png");
+  margin-top: 160px;
+  margin-bottom: 160px;
+}
+
+.floating-strawberries {
+  position: relative;
+}
+
+.floating-strawberries-container {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: -55px;
+  width: 100%;
+}
+
+.floating-strawberries-container img.left {
+  margin-right: 25px;
+  height: 140px;
+}
+
+.floating-strawberries-container img.right {
+  transform: scaleX(-1);
+  height: 120px;
+}
+
+.nav-message {
+  width: 885px;
+  height: 140px;
+  border-radius: 70px;
+  background-color: white;
+  box-shadow: 0 6px 10px 0 rgba(215,215,215,0.5);
+  font-family: 'Source Sans Pro';
+  font-size: 64px;
+  font-weight: bold;
+  text-align: center;
+  margin: auto auto;
+  line-height: 136px;
+  color: var(--boop-color);
+  margin-top: 90px;
+}
+
+.nav-message span {
+  color: var(--booper-color);
+}
+
+
+.home-page-components {
+  display: grid;
+  grid-auto-rows: minmax(100px, auto);
+  grid-row-gap: 160px;
+  width: 100%
+}
+
+
+.new-section-intro {
+  grid-column: 3/11;
+  margin-bottom:
+}
+
+.new-section-intro,
+.new-section-intro p {
+  text-align: center;
+}
+
+
 
 .introduction {
   grid-column: 1/13;
   height: 473px;
 }
 
-.image {
+.about-us-image {
   grid-column: 1/7;
   background-color: black;
+  background-image: url("https://media.giphy.com/media/XIOPwyK8C4bJFsu2PV/giphy.gif");
+  background-size: auto 100%;
+  background-position: center;
+  overflow: hidden;
+  background-repeat; none;
 }
 
-.text {
+.our-mission-image {
+  grid-column: 7/13;
+  background-color: purple;
+}
+
+.about-us-text {
   grid-column: 8/13;
   text-align: left;
+  align-self: center;
+}
+
+.our-mission-text {
+  grid-column: 1/6;
+  text-align: left;
+  align-self: center;
+}
+
+.bossing-section {
+  grid-template-columns: 50% 50%;
+  grid-gap: 55px;
+}
+.bossing-gif {
+  height: 100px;
+  align-self: start;
+  justify-self: end;
+  width: 300px;
+  height: 200px;
+  margin-right: 0px;
+}
+
+.bossing-gif img {
+  max-height: 200px;
+  max-width: 300px;
+  transform: scaleX(-1);
+}
+
+.bossing-gif.scarlion img {
+  transform: scale(1.4);
+  height: 150px;
+}
+
+.bossing-gif.horntail img {
+  transform: scale(1.3);
+  margin-left: 50px;
+}
+
+.bossing-prices h1 {
+  color: #4a4a4a;
+  text-align: left;
+  text-weight: semibold;
+  margin-bottom: 5px;
+}
+
+.prices {
+  border-top: 1px solid #979797;
+  border-bottom: 1px solid #979797;
+  width: 307px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 307px;
+  color: #FF7BA5;
+  font-family: "Source Sans Pro";
+  font-size: 24px;
+  line-height: 31px;
+  text-align: left;
+  margin-bottom: 13px;
+}
+
+.specific-prices {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 5px;
+}
+
+.berry-icon {
+  grid-column: 2/3;
+  filter: saturate(115%);
+}
+
+
+.booper .title-and-subtitle h3 {
+  color: var(--booper-color);
+  text-align: left;
+}
+
+.guilds h3 {
+  color: var(--boop-color);
+  text-align: left;
+}
+
+.recruitment-text {
+  grid-column: 3/12;
+}
+
+.guilds {
+  grid-column: 1/13;
+}
+
+.guilds.twelve-column-grid {
+  grid-auto-rows: minmax(10px, auto);
+}
+
+.requirements-text-styling {
+  font-size: 12px;
+}
+
+.requirements-container {
+  flex: initial;
+}
+
+.line-container {
+  flex: auto;
+  margin-left: 15px;
+  margin-top: 3px;
+}
+
+hr {
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #D8D8D8;
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+.requirements-line {
+  display: flex ;
+  grid-column: 3/12;
+  height: 30px;
+  margin-top: 35px;
+  margin-bottom: 5px;
+}
+
+.requirements-boxes {
+  width: auto;
+  height: auto;
+  padding: 20px;
+  display: flex;
+}
+
+.box-1 {
+    grid-column: 3/6;
+}
+
+.box-2 {
+  grid-column: 6/9;
+}
+
+.box-3 {
+  grid-column: 9/12;
+}
+
+.requirements p {
+  line-height: 24px;
+}
+
+.bullet-point {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  margin-right: 15px;
+  flex: none;
+  margin-top: 2px;
+}
+
+.booper .bullet-point {
+  background-color: var(--booper-color);
+}
+
+.boop .bullet-point {
+  background-color: var(--boop-color);
+}
+
+.recruitment-sections {
+  background: linear-gradient(white, #F7F7F7);
+
+}
+
+.alliance-area {
+    grid-column: 1/13;
+}
+
+
+.alliances {
+  height: 385px;
+  width: 100%;
+  background-color: lightgrey;
+  grid-column: span 4;
+}
+
+
+
+.overlay-container {
+  width: 100%;
+  position: relative;
+}
+
+.twelve-column-grid-overlay {  /* displays the overlay container on top of everything */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1000000px;
+  background: transparent;
+  padding: 0;
+  display: none;
+  z-index: 50;
+}
+
+.overlay-container > .twelve-column-grid-overlay {
+  background: transparent;
+}
+
+.twelve-column-grid-overlay p {
+  border: 1px solid white;
+  background: black;
+  margin: 0;
+  opacity: 0.2;
+}
+
+.space {
+  height: 80px;
+  width: auto;
+  grid-column: 1/13;
+}
+
+.member-image {
+  height: 221px;
+  width: 221px;
+  text-align: center;
+  margin: 0 auto;
+  background-size: auto 100%;
+  background-position: center;
+  overflow: hidden;
+  background-repeat; none;
+  filter: saturate(125%);
+}
+
+.member-image.flora {
+  background-image: url("https://maplelegends.com/avatar/create.php?name=Flora");
+}
+
+.member-image.katrinaa {
+  background-image: url("https://maplelegends.com/avatar/create.php?name=Katrinaa");
+}
+
+.member-image.cliint {
+  background-image: url("https://maplelegends.com/avatar/create.php?name=Cliint");
+}
+
+.member-image.lustless {
+  background-image: url("https://maplelegends.com/avatar/create.php?name=Lustless");
+}
+
+.member-card {
+  grid-column: span 3;
+}
+
+.member-card p {
+  text-align: center;
+}
+
+.member-card .quote {
+  margin-top: 10px;
+}
+
+.member-card h3 {
+  text-align: center;
+  margin-bottom: 0px;
+  color: var(--boop-color);
+}
+
+.member-card.flora h3 {
+  color: var(--boop-color);
+}
+
+
+.member-card.katrinaa h3 {
+  color: var(--boop-color);
+}
+
+.member-card.cliint h3 {
+  color: var(--booper-color);
+}
+
+.member-card.lustless h3 {
+  color: var(--booper-color);
+}
+
+.footer {
+  background-color: #DBF3FF;
+  height: 500px;
+  background-repeat: repeat;
+  background-image: url("http://i68.tinypic.com/25iq5h1.png");
+}
+
+.footer-card-area {
+  grid-column: 4/10;
+  background-color: var(--boop-color);
+  margin: auto 0;
+  border-radius: 10px;
+  padding: 50px;
+}
+
+.footer-content {
+  align-self: center;
+}
+
+.footer-card-area h1 {
+  color: white;
+  text-align: center;
+}
+
+.footer-card-area p {
+  color: white;
+  text-align: center;
+}
+
+.footer-content button {
+  background-color: white;
+  text-align: center;
+  color: var(--boop-color);
+  border-radius: 27px;
+  width: 200px;
+  height: 54px;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-top: 20px;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+}
+.footer-area {
+  height: 500px;
+}
+
+.end-footer-color {
+  height: 35px;
+}
+
+.end-footer-color.boop {
+  background-color: var(--boop-color);
+}
+
+.end-footer-color.booper {
+  background-color: var(--booper-color);
+}
+
+.end-footer-color.boopest {
+  background-color: #C68BFF;
 }
