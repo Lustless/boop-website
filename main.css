@@ -278,7 +278,6 @@ input:checked + .overlay-container > .twelve-column-grid-overlay {
 
 .about-us-image {
   grid-column: 1/7;
-  background-color: black;
   background-image: url("https://media.giphy.com/media/XIOPwyK8C4bJFsu2PV/giphy.gif");
   background-size: auto 100%;
   background-position: center;
@@ -288,7 +287,11 @@ input:checked + .overlay-container > .twelve-column-grid-overlay {
 
 .our-mission-image {
   grid-column: 7/13;
-  background-color: purple;
+  background-image: url("./berry_farm_picture.jpg");
+  background-size: auto 100%;
+  background-position: center;
+  overflow: hidden;
+  background-repeat; none;
 }
 
 .about-us-text {
@@ -511,8 +514,8 @@ hr {
 }
 
 .member-image {
-  height: 221px;
-  width: 221px;
+  height: 200px;
+  width: 200px;
   text-align: center;
   margin: 0 auto;
   background-size: auto 100%;
@@ -526,16 +529,32 @@ hr {
   background-image: url("https://maplelegends.com/avatar/create.php?name=Flora");
 }
 
-.member-image.katrinaa {
-  background-image: url("https://maplelegends.com/avatar/create.php?name=Katrinaa");
+.member-image.tina {
+  background-image: url("https://maplelegends.com/avatar/create.php?name=xTina");
 }
 
-.member-image.cliint {
-  background-image: url("https://maplelegends.com/avatar/create.php?name=Cliint");
+.member-image.lindarling {
+  background-image: url("https://maplelegends.com/avatar/create.php?name=Lindarling");
 }
 
 .member-image.lustless {
   background-image: url("https://maplelegends.com/avatar/create.php?name=Lustless");
+}
+
+.member-image.will {
+  background-image: url("https://maplelegends.com/avatar/create.php?name=thiefwill");
+}
+
+.member-image.gamecube {
+  background-image: url("https://maplelegends.com/avatar/create.php?name=Gamecube945");
+}
+
+.member-image.ddemonicc {
+  background-image: url("https://maplelegends.com/avatar/create.php?name=Ddemonicc");
+}
+
+.member-image.bishirl {
+  background-image: url("https://maplelegends.com/avatar/create.php?name=BishIRL");
 }
 
 .member-card {
@@ -560,16 +579,31 @@ hr {
   color: var(--boop-color);
 }
 
-
-.member-card.katrinaa h3 {
+.member-card.gamecube h3 {
   color: var(--boop-color);
 }
 
-.member-card.cliint h3 {
-  color: var(--booper-color);
+.member-card.xtina h3 {
+  color: var(--boop-color);
+}
+
+.member-card.will h3 {
+  color: var(--boop-color);
 }
 
 .member-card.lustless h3 {
+  color: var(--booper-color);
+}
+
+.member-card.lindarling h3 {
+  color: var(--booper-color);
+}
+
+.member-card.bishirl h3 {
+  color: var(--booper-color);
+}
+
+.member-card.ddemonicc h3 {
   color: var(--booper-color);
 }
 
