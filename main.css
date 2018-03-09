@@ -362,7 +362,6 @@ input:checked + .overlay-container > .twelve-column-grid-overlay {
 
 .berry-icon {
   grid-column: 2/3;
-  filter: saturate(115%);
 }
 
 
