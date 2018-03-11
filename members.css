@@ -1,0 +1,672 @@
+
+.thing-1 {
+  grid-column: 1/13;
+}
+
+.thing-2 {
+  grid-column: 4/13;
+  /*grid-row: 2/4;*/
+}
+
+.thing-3 {
+  grid-column: 1/4;
+}
+
+.thing-4 {
+  grid-column: 1/13;
+  grid-row: 4/6;
+}
+
+
+body {
+  margin: 0;
+}
+
+:root {
+  --boop-color: #70CBFA;
+  --booper-color: #FF7BA5;
+  --body-text-color: #4A4A4A;
+}
+
+.booper-color {
+  color: var(--booper-color);
+}
+
+p {
+  color: var(--body-text-color);
+  font-size: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: regular;
+  text-align: left;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  line-height: 24px;
+}
+
+h1 {
+  color: var(--boop-color);
+  font-size: 36px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  margin-bottom: 15px;
+  margin-top: 0px;
+}
+
+h2 {
+  color: var(--body-text-color);
+  font-size: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 3px;
+}
+
+h3 {
+  font-size: 24px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: Bold;
+  margin-top: 0px;
+  line-height: 31px;
+  margin-bottom: 10px;
+}
+
+b {
+  color: var(--body-text-color);
+  font-size: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  line-height: 24px;
+}
+
+.master-container {
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(auto, auto);
+  width: 100%;
+}
+.master-container > .header {
+  display: grid;
+  text-align: center;
+}
+.master-container > .sections {
+  display: grid;
+  grid-row-gap: 160px;
+}
+
+/*.sections > div {
+  background-color: lightgreen; /* TEMPORARY TO HELP SEE SIZE BETTER */
+
+
+.sections > .events-sections {
+  display: grid;
+  grid-row-gap: 80px;
+}
+.sections > .events-sections > .events-section {
+  display: grid;
+  grid-row-gap: 80px;
+}
+.sections > .services-sections {
+  display: grid;
+  grid-row-gap: 80px;
+}
+.sections > .services-sections > .services-section-components {
+  display: grid;
+    grid-row-gap: 80px;
+}
+.sections > .recruitment-sections {
+  display: grid;
+  grid-row-gap: 80px;
+}
+
+.sections > .recruitment-sections > .recruitment-section-components{
+  display: grid;
+  grid-row-gap: 80px;
+  margin-bottom: 80px;
+}
+
+.sections > .alliances-sections {
+  display: grid;
+  grid-row-gap: 40px;
+}
+
+.sections > .members-sections {
+  display: grid;
+  grid-row-gap: 80px;
+}
+.master-container > .footer {
+  display: grid;
+}
+.twelve-column-grid { /* makes something have a 12 column grid */
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-column-gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.twelve-column-grid-overlay {
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+  max-width: 1200px;
+}
+
+
+
+.header {
+  align: center;
+  grid-column: 1/13;
+}
+
+.header-text {
+  color: var(--boop-color);
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+}
+
+.super-grid {
+  display: grid;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.overlay-checkbox {
+  display: grid;
+}
+
+input:checked + .overlay-container > .twelve-column-grid-overlay {
+  display: grid;
+}
+
+.nav-bar button {
+  color: var(--boop-color);
+  font-family: 'Source Sans Pro';
+  font-size: 18px;
+  font-weight: bold;
+  border: 0px transparent;
+  width: 140px;
+  margin-top: 20px;
+}
+
+.landing-background {
+  background-color: #F4F7F8;
+  height: 600px;
+  width: 100%;
+  background-image: url("./members-banner.png");
+  margin-top: 40px;
+  margin-bottom: 160px;
+  background-size: 100% auto;
+  background-position: center;
+  overflow: hidden;
+  background-repeat; none;
+}
+
+
+
+.home-page-components {
+  display: grid;
+  grid-auto-rows: minmax(100px, auto);
+  grid-row-gap: 160px;
+  width: 100%
+}
+
+
+.new-section-intro {
+  grid-column: 3/11;
+  margin-bottom:
+}
+
+.new-section-intro,
+.new-section-intro p {
+  text-align: center;
+}
+
+
+
+.introduction {
+  grid-column: 1/13;
+  height: 473px;
+}
+
+
+.bossing-section {
+  grid-template-columns: 50% 50%;
+  grid-gap: 55px;
+}
+.bossing-gif {
+  height: 100px;
+  align-self: start;
+  justify-self: end;
+  width: 300px;
+  height: 200px;
+  margin-right: 0px;
+}
+
+.bossing-gif img {
+  max-height: 200px;
+  max-width: 300px;
+  transform: scaleX(-1);
+}
+
+.bossing-gif.scarlion img {
+  transform: scale(1.4);
+  height: 150px;
+}
+
+.bossing-gif.horntail img {
+  transform: scale(1.3);
+  margin-left: 50px;
+}
+
+.bossing-prices h1 {
+  color: #4a4a4a;
+  text-align: left;
+  text-weight: semibold;
+  margin-bottom: 5px;
+}
+
+.prices {
+  border-top: 1px solid #979797;
+  border-bottom: 1px solid #979797;
+  width: 307px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 307px;
+  color: #FF7BA5;
+  font-family: "Source Sans Pro";
+  font-size: 24px;
+  line-height: 31px;
+  text-align: left;
+  margin-bottom: 13px;
+}
+
+.specific-prices {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 5px;
+}
+
+.berry-icon {
+  grid-column: 2/3;
+}
+
+
+.booper .title-and-subtitle h3 {
+  color: var(--booper-color);
+  text-align: left;
+}
+
+.guilds h3 {
+  color: var(--boop-color);
+  text-align: left;
+}
+
+.recruitment-text {
+  grid-column: 3/12;
+}
+
+.guilds {
+  grid-column: 1/13;
+}
+
+.guilds.twelve-column-grid {
+  grid-auto-rows: minmax(10px, auto);
+}
+
+.requirements-text-styling {
+  font-size: 12px;
+}
+
+.requirements-container {
+  flex: initial;
+}
+
+.line-container {
+  flex: auto;
+  margin-left: 15px;
+  margin-top: 3px;
+}
+
+hr {
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #D8D8D8;
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+.requirements-line {
+  display: flex ;
+  grid-column: 3/12;
+  height: 30px;
+  margin-top: 35px;
+  margin-bottom: 5px;
+}
+
+.requirements-boxes {
+  width: auto;
+  height: auto;
+  padding: 20px;
+  display: flex;
+}
+
+.box-1 {
+    grid-column: 3/6;
+}
+
+.box-2 {
+  grid-column: 6/9;
+}
+
+.box-3 {
+  grid-column: 9/12;
+}
+
+.requirements p {
+  line-height: 24px;
+}
+
+.bullet-point {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  margin-right: 15px;
+  flex: none;
+  margin-top: 2px;
+}
+
+.booper .bullet-point {
+  background-color: var(--booper-color);
+}
+
+.boop .bullet-point {
+  background-color: var(--boop-color);
+}
+
+.recruitment-sections {
+  background: linear-gradient(white, #F7F7F7);
+
+}
+
+.alliance-area {
+    grid-column: 1/13;
+}
+
+
+.alliances {
+  height: 385px;
+  width: 100%;
+  background-color: lightgrey;
+  grid-column: span 4;
+}
+
+
+
+.overlay-container {
+  width: 100%;
+  position: relative;
+}
+
+.twelve-column-grid-overlay {  /* displays the overlay container on top of everything */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1000000px;
+  background: transparent;
+  padding: 0;
+  display: none;
+  z-index: 50;
+}
+
+.overlay-container > .twelve-column-grid-overlay {
+  background: transparent;
+}
+
+.twelve-column-grid-overlay p {
+  border: 1px solid white;
+  background: black;
+  margin: 0;
+  opacity: 0.2;
+}
+
+.space {
+  height: 80px;
+  width: auto;
+  grid-column: 1/13;
+}
+
+.member-image {
+  height: 200px;
+  width: 200px;
+  text-align: center;
+  margin: 0 auto;
+  background-size: auto 100%;
+  background-position: center;
+  overflow: hidden;
+  background-repeat; none;
+  filter: saturate(125%);
+}
+
+.member-image.flora {
+  background-image: url("https://maplelegends.com/avatar/create.php?name=Flora");
+}
+
+.member-image.tina {
+  background-image: url("https://maplelegends.com/avatar/create.php?name=xTina");
+}
+
+.member-image.lindarling {
+  background-image: url("https://maplelegends.com/avatar/create.php?name=Lindarling");
+}
+
+.member-image.lustless {
+  background-image: url("https://maplelegends.com/avatar/create.php?name=Lustless");
+}
+
+.member-image.will {
+  background-image: url("https://maplelegends.com/avatar/create.php?name=thiefwill");
+}
+
+.member-image.gamecube {
+  background-image: url("https://maplelegends.com/avatar/create.php?name=Gamecube945");
+}
+
+.member-image.ddemonicc {
+  background-image: url("https://maplelegends.com/avatar/create.php?name=Ddemonicc");
+}
+
+.member-image.bishirl {
+  background-image: url("https://maplelegends.com/avatar/create.php?name=BishIRL");
+}
+
+.member-card {
+  grid-column: span 3;
+}
+
+.member-card p {
+  text-align: center;
+}
+
+.member-card .quote {
+  margin-top: 10px;
+}
+
+.member-card h3 {
+  text-align: center;
+  margin-bottom: 0px;
+  color: var(--boop-color);
+}
+
+.member-card.flora h3 {
+  color: var(--boop-color);
+}
+
+.member-card.gamecube h3 {
+  color: var(--boop-color);
+}
+
+.member-card.xtina h3 {
+  color: var(--boop-color);
+}
+
+.member-card.will h3 {
+  color: var(--boop-color);
+}
+
+.member-card.lustless h3 {
+  color: var(--booper-color);
+}
+
+.member-card.lindarling h3 {
+  color: var(--booper-color);
+}
+
+.member-card.bishirl h3 {
+  color: var(--booper-color);
+}
+
+.member-card.ddemonicc h3 {
+  color: var(--booper-color);
+}
+
+.footer {
+  background-color: #DBF3FF;
+  height: 500px;
+  background-repeat: repeat;
+  background-image: url("http://i68.tinypic.com/25iq5h1.png");
+}
+
+.footer-card-area {
+  grid-column: 4/10;
+  background-color: var(--boop-color);
+  margin: auto 0;
+  border-radius: 10px;
+  padding: 50px;
+}
+
+.footer-content {
+  align-self: center;
+}
+
+.footer-card-area h1 {
+  color: white;
+  text-align: center;
+}
+
+.footer-card-area p {
+  color: white;
+  text-align: center;
+}
+
+.footer-content button {
+  background-color: white;
+  text-align: center;
+  color: var(--boop-color);
+  border-radius: 27px;
+  width: 200px;
+  height: 54px;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-top: 20px;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+}
+.footer-area {
+  height: 500px;
+}
+
+.end-footer-color {
+  height: 35px;
+}
+
+.end-footer-color.boop {
+  background-color: var(--boop-color);
+}
+
+.end-footer-color.booper {
+  background-color: var(--booper-color);
+}
+
+.end-footer-color.boopest {
+  background-color: #C68BFF;
+}
+
+.services-sections button {
+  border: 1px solid var(--booper-color);
+  border-radius: 50px;
+  color: var(--booper-color);
+  font-size: 16px;
+  font-family: 'Source Sans Pro';
+  width: 180px;
+  height: 45px;
+  margin-top: 15px;
+}
+
+.services-sections button:hover {
+  background-color: var(--booper-color)
+  color: white;
+}
+
+.events-and-giveaway-card {
+  grid-column: span 4;
+  padding: 24px;
+  box-shadow: 0 3px 50px 0 rgba(224,224,224,0.5), 0 6px 19px 0 #E6E6E6;
+  border-radius: 10px;
+  height: 368px;
+}
+
+.events-and-giveaway-card h3 {
+  color: var(--body-text-color);
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.events-and-giveaway-card > .date {
+  color: #B7B7B7;
+  margin-bottom: 16px;
+}
+
+.tag {
+  height: 28px;
+  width: 65px;
+  border-radius: 100px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: white;
+  font-family: "Source Sans Pro";
+  font-size: 14px;
+  line-height: 29px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.giveaway.tag {
+  background-color: var(--boop-color);
+}
+
+.event.tag {
+  background-color: var(--booper-color);
+}
+
+.events-and-giveaway-card > .timer {
+  align: bottom;
+}

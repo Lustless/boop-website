@@ -673,3 +673,19 @@ hr {
 .end-footer-color.boopest {
   background-color: #C68BFF;
 }
+
+.services-sections button {
+  border: 1px solid var(--booper-color);
+  border-radius: 50px;
+  color: var(--booper-color);
+  font-size: 16px;
+  font-family: 'Source Sans Pro';
+  width: 180px;
+  height: 45px;
+  margin-top: 15px;
+}
+
+.services-sections button:hover {
+  background-color: var(--booper-color)
+  color: white;
+}
