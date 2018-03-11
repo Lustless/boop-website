@@ -191,7 +191,7 @@ input:checked + .overlay-container > .twelve-column-grid-overlay {
   display: grid;
 }
 
-.nav-bar button {
+.nav-bar > button {
   color: var(--boop-color);
   font-family: 'Source Sans Pro';
   font-size: 18px;
@@ -199,6 +199,10 @@ input:checked + .overlay-container > .twelve-column-grid-overlay {
   border: 0px transparent;
   width: 140px;
   margin-top: 20px;
+}
+
+a.button {
+  color: var(--boop-color);
 }
 
 .landing-background {
@@ -274,7 +278,7 @@ input:checked + .overlay-container > .twelve-column-grid-overlay {
 .bossing-prices h1 {
   color: #4a4a4a;
   text-align: left;
-  text-weight: semibold;
+  font-weight: 600;
   margin-bottom: 5px;
 }
 
@@ -299,12 +303,23 @@ input:checked + .overlay-container > .twelve-column-grid-overlay {
   grid-row-gap: 8px;
 }
 
-.specific-prices p {
-  font-size: 20px;
+.specific-prices .label {
+  background-color: var(--booper-color);
+  border-radius: 2.5px;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-family: 'Source Sans Pro';
+  font-weight: 600;
+  color: white;
+  margin-right: 5px;
+  width: -moz-min-content;
+  width: -webkit-min-content;
+  width: min-content;
 }
 
 .bossing-prices p {
-  font-size: 20px
+  font-size: 20px;
+  display: inline-block;
 }
 
 .berry-icon {
@@ -662,8 +677,8 @@ hr {
   width: -webkit-min-content;
   width: min-content;
   border-radius: 100px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
   color: white;
   font-family: "Source Sans Pro";
   font-size: 14px;

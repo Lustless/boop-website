@@ -190,14 +190,17 @@ input:checked + .overlay-container > .twelve-column-grid-overlay {
   display: grid;
 }
 
-.nav-bar button {
-  color: var(--boop-color);
+.nav-bar > button {
   font-family: 'Source Sans Pro';
   font-size: 18px;
   font-weight: bold;
   border: 0px transparent;
   width: 140px;
   margin-top: 20px;
+}
+
+a.button {
+  color: var(--boop-color);
 }
 
 .landing-background {
