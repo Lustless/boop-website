@@ -693,6 +693,7 @@ hr {
 }
 
 .services-sections button:hover {
-  background-color: var(--booper-color)
+  background-color: var(--booper-color);
   color: white;
+  transition: .35s;
 }

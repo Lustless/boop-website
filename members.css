@@ -211,7 +211,6 @@ a.button {
   width: 100%;
   background-image: url("./members-banner.png");
   margin-top: 40px;
-  margin-bottom: 160px;
   background-size: 100% auto;
   background-position: center;
   overflow: hidden;
@@ -564,13 +563,16 @@ hr {
 .footer {
   background-color: #DBF3FF;
   height: 500px;
-  background-repeat: repeat;
-  background-image: url("http://i68.tinypic.com/25iq5h1.png");
+  background-image: url("./christmas-picture.png");
+  width: 100%;
+  background-size: 100% auto;
+  background-position: center;
+  overflow: hidden;
 }
 
 .footer-card-area {
   grid-column: 4/10;
-  background-color: var(--boop-color);
+  background-color: var(--booper-color);
   margin: auto 0;
   border-radius: 10px;
   padding: 50px;
@@ -652,7 +654,7 @@ hr {
   padding: 24px;
   box-shadow: 0 3px 50px 0 rgba(224,224,224,0.5), 0 6px 19px 0 #E6E6E6;
   border-radius: 10px;
-  height: 368px;
+  height: 326px;
 }
 
 .events-and-giveaway-card h3 {
