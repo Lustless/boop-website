@@ -116,8 +116,9 @@ b {
 }
 .sections > .services-sections > .services-section-components {
   display: grid;
-    grid-row-gap: 80px;
+  grid-row-gap: 80px;
 }
+
 .sections > .guild-rules-sections {
   display: grid;
   grid-row-gap: 80px;
@@ -238,15 +239,12 @@ a:hover { /* a link when the user mouses over it*/
 
 .new-section-intro {
   grid-column: 3/11;
-  margin-bottom:
 }
 
 .new-section-intro,
 .new-section-intro p {
   text-align: center;
 }
-
-
 
 .introduction {
   grid-column: 1/13;
@@ -574,9 +572,8 @@ hr {
 }
 
 .footer {
-  background-color: rgba(255, 123, 165, 0.5);
   height: 500px;
-  background-image: url("./christmas-picture.png");
+  background: linear-gradient(rgba(255, 123, 165, 0.5),rgba(255, 123, 165, 0.5)), url("./christmas-picture.png");
   width: 100%;
   background-size: 100% auto;
   background-position: center;
@@ -623,6 +620,7 @@ hr {
   margin-right: auto;
   display: grid;
 }
+
 .footer-area {
   height: 500px;
 }
@@ -716,4 +714,42 @@ hr {
 .guild-rule-card {
   grid-column: span 4
   padding: 20px;
+}
+
+.first-announcement-line {
+  grid-column: 3/11;
+  text-align: center;
+}
+
+.announcement-timestamp {
+  padding: 0 20px;
+  background-color: white;
+  color: #9B9B9B;
+  font-family: "Source Sans Pro";
+  font-size: 14px;
+}
+
+.announcement-divider-line {
+  color: #D8D8D8;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+.first-announcement-line h3 {
+  color: var(--boop-color);
+  text-align: center
+}
+
+.small-announcement-card {
+  grid-column: span 3;
+  text-align: left;
+}
+
+.small-announcement-card p {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.small-announcement-card  .announcement-timestamp {
+  padding-left: 0;
 }
