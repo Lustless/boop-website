@@ -82,6 +82,10 @@ b {
   line-height: 24px;
 }
 
+a:link { /* - a normal, unvisited link */
+  text-decoration: none;
+  }
+
 .master-container {
   display: grid;
   position: relative;
@@ -372,6 +376,10 @@ a.button {
 
 .bossing-prices p {
   font-size: 20px
+}
+
+.bossing-prices b {
+  font-size: 20px;
 }
 
 .berry-icon {

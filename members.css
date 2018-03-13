@@ -205,6 +205,15 @@ a.button {
   color: var(--boop-color);
 }
 
+a:link { /* - a normal, unvisited link */
+  text-decoration: none;
+  }
+
+a:visited {/*a link the user has visited*/
+  }
+a:hover { /* a link when the user mouses over it*/
+  }
+
 .landing-background {
   background-color: #F4F7F8;
   height: 600px;
@@ -319,6 +328,10 @@ a.button {
 .bossing-prices p {
   font-size: 20px;
   display: inline-block;
+}
+
+.bossing-prices b {
+  font-size: 20px;
 }
 
 .berry-icon {
@@ -561,7 +574,7 @@ hr {
 }
 
 .footer {
-  background-color: #DBF3FF;
+  background-color: rgba(255, 123, 165, 0.5);
   height: 500px;
   background-image: url("./christmas-picture.png");
   width: 100%;
@@ -595,7 +608,7 @@ hr {
 .footer-content button {
   background-color: white;
   text-align: center;
-  color: var(--boop-color);
+  color: var(--booper-color);
   border-radius: 27px;
   width: 200px;
   height: 54px;
