@@ -119,6 +119,11 @@ b {
   grid-row-gap: 80px;
 }
 
+.sections > .announcements-section-component > .announcements-section-components {
+  display: grid;
+  grid-row-gap: 80px;
+}
+
 .sections > .guild-rules-sections {
   display: grid;
   grid-row-gap: 80px;
