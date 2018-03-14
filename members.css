@@ -119,8 +119,7 @@ b {
   grid-row-gap: 80px;
 }
 
-.sections > .announcements-section-component > .announcements-section-components {
-  display: grid;
+.sections > .announcements-section-components {
   grid-row-gap: 80px;
 }
 
@@ -230,6 +229,7 @@ a:hover { /* a link when the user mouses over it*/
   background-position: center;
   overflow: hidden;
   background-repeat; none;
+  margin-bottom: 160px;
 }
 
 
