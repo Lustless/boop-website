@@ -195,16 +195,24 @@ input:checked + .overlay-container > .twelve-column-grid-overlay {
 }
 
 .nav-bar > button {
+  color: var(--boop-color);
   font-family: 'Source Sans Pro';
   font-size: 18px;
   font-weight: bold;
   border: 0px transparent;
   width: 140px;
   margin-top: 20px;
+  text-decoration: none;
 }
 
-a.button {
-  color: var(--boop-color);
+a:-webkit-any-link {
+    color: var(--boop-color);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover {
+  color: #5DBBEC;
 }
 
 .landing-background {
