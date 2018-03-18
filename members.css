@@ -121,12 +121,7 @@ b {
 
 .sections > .announcements-section-components {
   display: grid;
-  grid-gap: 80px;
-}
-
-.sections > .announcements-section-components > .announcements-section-component {
-  display: grid;
-  grid-row-gap: 80px;
+  grid-gap: 40px;
 }
 
 .sections > .guild-rules-sections {
