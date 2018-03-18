@@ -207,6 +207,7 @@ input:checked + .overlay-container > .twelve-column-grid-overlay {
   width: 140px;
   margin-top: 20px;
   text-decoration: none;
+  background-color: white;
 }
 
 a:-webkit-any-link {
@@ -655,6 +656,7 @@ hr {
   width: 180px;
   height: 45px;
   margin-top: 15px;
+  background-color: white;
 }
 
 .services-sections button:hover {
@@ -724,6 +726,7 @@ hr {
 .first-announcement-line {
   grid-column: 3/11;
   text-align: center;
+  margin-bottom: 80px;
 }
 
 .announcement-timestamp {

@@ -203,6 +203,7 @@ input:checked + .overlay-container > .twelve-column-grid-overlay {
   width: 140px;
   margin-top: 20px;
   text-decoration: none;
+  background-color: white;
 }
 
 a:-webkit-any-link {
