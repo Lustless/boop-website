@@ -119,6 +119,11 @@ b {
   grid-row-gap: 80px;
 }
 
+.sections > .announcements-section-components {
+  display: grid;
+  grid-gap: 80px;
+}
+
 .sections > .announcements-section-components > .announcements-section-component {
   display: grid;
   grid-row-gap: 80px;
@@ -726,7 +731,6 @@ hr {
 .first-announcement-line {
   grid-column: 3/11;
   text-align: center;
-  margin-bottom: 80px;
 }
 
 .announcement-timestamp {
