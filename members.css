@@ -712,6 +712,7 @@ hr {
 
 .events-and-giveaway-card > .timer {
   align: bottom;
+  color: var(--booper-color);
 }
 
 .strikethrough {
