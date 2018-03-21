@@ -1,23 +1,4 @@
 
-.thing-1 {
-  grid-column: 1/13;
-}
-
-.thing-2 {
-  grid-column: 4/13;
-  /*grid-row: 2/4;*/
-}
-
-.thing-3 {
-  grid-column: 1/4;
-}
-
-.thing-4 {
-  grid-column: 1/13;
-  grid-row: 4/6;
-}
-
-
 body {
   margin: 0;
 }
@@ -167,7 +148,7 @@ a:link { /* - a normal, unvisited link */
 
 .header {
   align: center;
-  grid-column: 1/13;
+  grid-column: span 12;
 }
 
 .header-text {
@@ -574,7 +555,7 @@ hr {
 }
 
 .member-image.ddemonicc {
-  background-image: url("https://maplelegends.com/avatar/create.php?name=Ddemonicc");
+  background-image: url("https://maplelegends.com/avatar/create.php?name=DDemonScythe");
 }
 
 .member-image.bishirl {
@@ -616,7 +597,7 @@ hr {
 }
 
 .member-card.lustless h3 {
-  color: var(--booper-color);
+  color: var(--boop-color);
 }
 
 .member-card.lindarling h3 {
@@ -678,6 +659,7 @@ hr {
   margin-right: auto;
   display: grid;
 }
+
 .footer-area {
   height: 500px;
 }

@@ -483,99 +483,6 @@ hr {
   grid-column: 1/13;
 }
 
-.member-image {
-  height: 200px;
-  width: 200px;
-  text-align: center;
-  margin: 0 auto;
-  background-size: auto 100%;
-  background-position: center;
-  overflow: hidden;
-  background-repeat; none;
-  filter: saturate(125%);
-}
-
-.member-image.flora {
-  background-image: url("https://maplelegends.com/avatar/create.php?name=Flora");
-}
-
-.member-image.tina {
-  background-image: url("https://maplelegends.com/avatar/create.php?name=xTina");
-}
-
-.member-image.lindarling {
-  background-image: url("https://maplelegends.com/avatar/create.php?name=Lindarling");
-}
-
-.member-image.lustless {
-  background-image: url("https://maplelegends.com/avatar/create.php?name=Lustless");
-}
-
-.member-image.will {
-  background-image: url("https://maplelegends.com/avatar/create.php?name=thiefwill");
-}
-
-.member-image.gamecube {
-  background-image: url("https://maplelegends.com/avatar/create.php?name=Gamecube945");
-}
-
-.member-image.ddemonicc {
-  background-image: url("https://maplelegends.com/avatar/create.php?name=Ddemonicc");
-}
-
-.member-image.bishirl {
-  background-image: url("https://maplelegends.com/avatar/create.php?name=BishIRL");
-}
-
-.member-card {
-  grid-column: span 3;
-}
-
-.member-card p {
-  text-align: center;
-}
-
-.member-card .quote {
-  margin-top: 10px;
-}
-
-.member-card h3 {
-  text-align: center;
-  margin-bottom: 0px;
-  color: var(--boop-color);
-}
-
-.member-card.flora h3 {
-  color: var(--boop-color);
-}
-
-.member-card.gamecube h3 {
-  color: var(--boop-color);
-}
-
-.member-card.xtina h3 {
-  color: var(--boop-color);
-}
-
-.member-card.will h3 {
-  color: var(--boop-color);
-}
-
-.member-card.lustless h3 {
-  color: var(--booper-color);
-}
-
-.member-card.lindarling h3 {
-  color: var(--booper-color);
-}
-
-.member-card.bishirl h3 {
-  color: var(--booper-color);
-}
-
-.member-card.ddemonicc h3 {
-  color: var(--booper-color);
-}
 
 .footer {
   height: 500px;
@@ -608,10 +515,9 @@ hr {
   text-align: center;
 }
 
-.footer-content button {
+.footer-content .lit-button {
   background-color: white;
   text-align: center;
-  color: var(--booper-color);
   border-radius: 27px;
   width: 200px;
   height: 54px;
@@ -625,6 +531,41 @@ hr {
   margin-left: auto;
   margin-right: auto;
   display: grid;
+  transition: all 0.5s;
+}
+
+.footer-content .lit-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.footer-content .lit-button span:after {
+  content: '\00bb';
+  color: var(booper-color);
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -5px;
+  transition: 0.5s;
+}
+
+.footer-content .lit-button:hover span {
+  padding-right: 25px;
+}
+
+.footer-content .lit-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.footer-content a {
+  color: var(--booper-color);
+}
+
+.footer-content a:hover {
+  color: #F8A7C1;
 }
 
 .footer-area {
