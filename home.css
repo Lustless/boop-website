@@ -275,8 +275,6 @@ a:hover {
   text-align: center;
 }
 
-
-
 .introduction {
   grid-column: span 12;
   height: 473px;
@@ -288,7 +286,7 @@ a:hover {
   background-size: auto 100%;
   background-position: center;
   overflow: hidden;
-  background-repeat; none;
+  background-repeat: none;
 }
 
 .our-mission-image {
@@ -297,7 +295,7 @@ a:hover {
   background-size: auto 100%;
   background-position: center;
   overflow: hidden;
-  background-repeat; none;
+  background-repeat: none;
 }
 
 .about-us-text {
@@ -316,6 +314,7 @@ a:hover {
   grid-template-columns: 50% 50%;
   grid-gap: 55px;
 }
+
 .bossing-gif {
   height: 100px;
   align-self: start;
@@ -699,7 +698,7 @@ hr {
 
 
 /* If the screen size is 400px or less, set stuff to whatever I said */
-@media only screen and (max-width: 400px) {
+@media only screen and (min-width: 360px) and (max-width: 767px) {
   .twelve-column-grid { /* makes something have a 12 column grid */
       display: grid;
       grid-template-columns: repeat(4,1fr);

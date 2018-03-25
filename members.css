@@ -653,3 +653,26 @@ hr {
 .small-announcement-card  .announcement-timestamp {
   padding-left: 0;
 }
+
+/* If the screen size is 400px or less, set stuff to whatever I said */
+@media only screen and (max-width: 400px) {
+  .twelve-column-grid { /* makes something have a 12 column grid */
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      grid-auto-rows: minmax(100px, auto);
+      grid-column-gap: 20px;
+      max-width: 400px;
+      margin: 0 auto;
+  }
+
+  .new-section-intro {
+    grid-column: 1/5;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+
+    .twelve-column-grid-overlay {
+      display: none;
+    }
+}
