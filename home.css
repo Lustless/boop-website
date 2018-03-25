@@ -74,10 +74,12 @@ a:link { /* - a normal, unvisited link */
   grid-auto-rows: minmax(auto, auto);
   width: 100%;
 }
+
 .master-container > .header {
   display: grid;
   text-align: center;
 }
+
 .master-container > .sections {
   display: grid;
   grid-row-gap: 160px;
@@ -229,10 +231,9 @@ a:hover {
   height: 120px;
 }
 
-.nav-message {
-  width: 885px;
-  height: 140px;
-  border-radius: 70px;
+.nav-bubble {
+  grid-column: span 12;
+  border-radius: 100px;
   background-color: white;
   box-shadow: 0 6px 10px 0 rgba(215,215,215,0.5);
   font-family: 'Source Sans Pro';
@@ -245,11 +246,15 @@ a:hover {
   margin-top: 90px;
 }
 
-.nav-message span {
+.nav-bubble-text {
+  margin: 8px 60px;
+}
+
+.nav-bubble span {
   color: var(--booper-color);
 }
 
-.nav-message .grey-text {
+.nav-bubble .grey-text {
   color: lightgrey;
 }
 
@@ -336,9 +341,12 @@ a:hover {
   margin-left: 50px;
 }
 
+.bossing-prices {
+  text-align: left;
+}
+
 .bossing-prices h1 {
   color: #4a4a4a;
-  text-align: left;
   font-weight: 600;
   margin-bottom: 5px;
 }
@@ -354,7 +362,6 @@ a:hover {
   font-family: "Source Sans Pro";
   font-size: 24px;
   line-height: 31px;
-  text-align: left;
   margin-bottom: 13px;
 }
 
@@ -476,7 +483,6 @@ hr {
 
 .alliances {
   height: 385px;
-  width: 100%;
   background-color: lightgrey;
   grid-column: span 4;
 }
@@ -613,11 +619,11 @@ hr {
 }
 
 .footer-card-area {
-  grid-column: 4/10;
   background-color: var(--boop-color);
   margin: auto 0;
   border-radius: 10px;
   padding: 50px;
+  grid-column: 4 / span 6;
 }
 
 .footer-content {
@@ -689,4 +695,121 @@ hr {
   background-color: var(--booper-color);
   color: white;
   transition: .35s;
+}
+
+
+/* If the screen size is 400px or less, set stuff to whatever I said */
+@media only screen and (max-width: 400px) {
+  .twelve-column-grid { /* makes something have a 12 column grid */
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      grid-auto-rows: minmax(100px, auto);
+      grid-column-gap: 20px;
+      max-width: 400px;
+      margin: 0 auto;
+  }
+
+  .new-section-intro,
+  .member-card,
+  .about-us-image,
+  .about-us-text,
+  .our-mission-text,
+  .our-mission-image,
+  .footer-card-area,
+  .bossing-gif,
+  .nav-bubble,
+  .bossing-prices,
+  .guilds.twelve-column-grid,
+  .requirements-boxes-container,
+  .requirements-boxes,
+  .requirements-line,
+  .alliances {
+    grid-column: 1/5;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .about-us-image, .our-mission-image {
+    height: 300px;
+  }
+
+  .about-us-text, .our-mission-text {
+    margin-top: 150px;
+  }
+
+  .member-card-section-2 {
+    display: none;
+  }
+
+  .twelve-column-grid-overlay {
+    display: none;
+  }
+
+  .member-card-section .member-card {
+    margin-bottom: 16px;
+  }
+
+  .master-container > .sections {
+    display: grid;
+    grid-row-gap: 80px;
+  }
+
+  .bossing-prices * {
+    text-align: center;
+  }
+
+  .bossing-prices .prices {
+    margin: 0 auto 13px auto;
+  }
+
+  .bossing-gif {
+    margin: 0 auto;
+  }
+
+  .bossing-gif.scarlion {
+    margin: 0 25px 0 65px;
+  }
+
+  .services-section-message .new-section-intro {
+    margin-top: 100px;
+  }
+
+  .nav-bubble {
+    border-radius: 100px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .nav-bubble-text {
+    line-height: 50px;
+    font-size: 48px;
+    margin: 20px 15px;
+  }
+
+  .sections > .introduction-sections {
+    display: grid;
+    grid-row-gap: 160px;
+  }
+
+  .guilds.twelve-column-grid, .requirements-boxes-container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-column-gap: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .berry-icon {
+    grid-column: 1/2;
+    margin-left: 16px;
+  }
+
+  .recruitment-text {
+    grid-column: 2/5;
+    margin-right: 16px;
+  }
+
+  .alliances {
+    margin-bottom: 40px;
+  }
 }
