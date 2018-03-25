@@ -286,7 +286,7 @@ a:hover {
   background-size: auto 100%;
   background-position: center;
   overflow: hidden;
-  background-repeat: none;
+  background-repeat: no-repeat;
 }
 
 .our-mission-image {
@@ -295,7 +295,7 @@ a:hover {
   background-size: auto 100%;
   background-position: center;
   overflow: hidden;
-  background-repeat: none;
+  background-repeat: no-repeat;
 }
 
 .about-us-text {

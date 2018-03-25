@@ -206,10 +206,10 @@ a:hover {
   width: 100%;
   background-image: url("./members-banner.png");
   margin-top: 40px;
-  background-size: 100% auto;
+  background-size: auto 100%;
   background-position: center;
   overflow: hidden;
-  background-repeat; none;
+  background-repeat: no-repeat;
   margin-bottom: 160px;
 }
 
@@ -267,9 +267,13 @@ a:hover {
   margin-left: 50px;
 }
 
+
+.bossing-prices {
+  text-align: left;
+}
+
 .bossing-prices h1 {
   color: #4a4a4a;
-  text-align: left;
   font-weight: 600;
   margin-bottom: 5px;
 }
@@ -285,7 +289,6 @@ a:hover {
   font-family: "Source Sans Pro";
   font-size: 24px;
   line-height: 31px;
-  text-align: left;
   margin-bottom: 13px;
 }
 
@@ -665,14 +668,52 @@ hr {
       margin: 0 auto;
   }
 
-  .new-section-intro {
+  .new-section-intro,
+  .footer-card-area,
+  .bossing-gif,
+  .bossing-prices,
+  .requirements-boxes-container,
+  .requirements-boxes,
+  .requirements-line,
+  .first-announcement-line,
+  .small-announcement-card,
+  .events-and-giveaway-card {
     grid-column: 1/5;
     margin-left: 16px;
     margin-right: 16px;
   }
 
 
-    .twelve-column-grid-overlay {
-      display: none;
-    }
+ .twelve-column-grid-overlay {
+    display: none;
+  }
+
+  .bossing-prices * {
+    text-align: center;
+  }
+
+  .bossing-prices .prices {
+    margin: 0 auto 13px auto;
+  }
+
+  .bossing-gif {
+    margin: 0 auto;
+  }
+
+  .bossing-gif.scarlion {
+    margin: 0 25px 0 65px;
+  }
+
+  .events-and-giveaway-card {
+    margin-top: 40px;
+  }
+
+  .small-announcement-card {
+    margin-top: 40px;
+  }
+
+  .master-container > .sections {
+    display: grid;
+    grid-row-gap: 120px;
+  }
 }
