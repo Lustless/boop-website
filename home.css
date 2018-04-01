@@ -277,7 +277,6 @@ a:hover {
 
 .introduction {
   grid-column: span 12;
-  height: 473px;
 }
 
 .about-us-image {
@@ -287,6 +286,7 @@ a:hover {
   background-position: center;
   overflow: hidden;
   background-repeat: no-repeat;
+  height: 473px;
 }
 
 .our-mission-image {
@@ -296,6 +296,7 @@ a:hover {
   background-position: center;
   overflow: hidden;
   background-repeat: no-repeat;
+  height: 473px;
 }
 
 .about-us-text {
@@ -308,6 +309,7 @@ a:hover {
   grid-column: 1/6;
   text-align: left;
   align-self: center;
+  display: grid;
 }
 
 .bossing-section {
@@ -733,8 +735,15 @@ hr {
     height: 300px;
   }
 
-  .about-us-text, .our-mission-text {
-    margin-top: 150px;
+  .our-mission-image {
+    margin-top: -550px;
+  }
+
+  .our-mission-text {
+    margin-top: 250px;
+  }
+  .about-us-text {
+    margin-top: 20px;
   }
 
   .member-card-section-2 {
@@ -763,7 +772,7 @@ hr {
   }
 
   .bossing-gif {
-    margin: 0 auto;
+    margin: 0 40px 0px 0;
   }
 
   .bossing-gif.scarlion {
@@ -771,7 +780,7 @@ hr {
   }
 
   .services-section-message .new-section-intro {
-    margin-top: 100px;
+    margin-top: -80px;
   }
 
   .nav-bubble {
