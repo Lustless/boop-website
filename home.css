@@ -701,7 +701,9 @@ hr {
 
 /* If the screen size is 400px or less, set stuff to whatever I said */
 
+
 @media only screen and (min-width: 300px) and (max-width: 872px) {
+
   .twelve-column-grid { /* makes something have a 12 column grid */
       display: grid;
       grid-template-columns: repeat(4,1fr);

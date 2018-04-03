@@ -659,11 +659,12 @@ hr {
 
 /* If the screen size is 400px or less, set stuff to whatever I said */
 @media only screen and (min-width: 300px) and (max-width: 872px) {
+
   .twelve-column-grid { /* makes something have a 12 column grid */
       display: grid;
       grid-template-columns: repeat(4,1fr);
       grid-auto-rows: minmax(100px, auto);
-      grid-column-gap: 20px;
+
       max-width: 800px;
       margin: 0 auto;
   }
