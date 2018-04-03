@@ -277,7 +277,6 @@ a:hover {
 
 .introduction {
   grid-column: span 12;
-  height: 473px;
 }
 
 .about-us-image {
@@ -286,7 +285,8 @@ a:hover {
   background-size: auto 100%;
   background-position: center;
   overflow: hidden;
-  background-repeat: none;
+  background-repeat: no-repeat;
+  height: 473px;
 }
 
 .our-mission-image {
@@ -295,7 +295,8 @@ a:hover {
   background-size: auto 100%;
   background-position: center;
   overflow: hidden;
-  background-repeat: none;
+  background-repeat: no-repeat;
+  height: 473px;
 }
 
 .about-us-text {
@@ -308,6 +309,7 @@ a:hover {
   grid-column: 1/6;
   text-align: left;
   align-self: center;
+  grid-row: 1;
 }
 
 .bossing-section {
@@ -319,7 +321,7 @@ a:hover {
   height: 100px;
   align-self: start;
   justify-self: end;
-  width: 300px;
+  width: auto;
   height: 200px;
   margin-right: 0px;
 }
@@ -699,13 +701,15 @@ hr {
 
 /* If the screen size is 400px or less, set stuff to whatever I said */
 
-@media only screen and (min-width: 360px) and (max-width: 767px) {
+
+@media only screen and (min-width: 300px) and (max-width: 872px) {
+
   .twelve-column-grid { /* makes something have a 12 column grid */
       display: grid;
       grid-template-columns: repeat(4,1fr);
       grid-auto-rows: minmax(100px, auto);
       grid-column-gap: 20px;
-      max-width: 400px;
+      max-width: 872px;
       margin: 0 auto;
   }
 
@@ -731,10 +735,15 @@ hr {
 
   .about-us-image, .our-mission-image {
     height: 300px;
+    background-size: auto auto;
   }
 
-  .about-us-text, .our-mission-text {
-    margin-top: 150px;
+  .our-mission-text {
+    grid-row: 2;
+  }
+
+  .our-mission-text, .about-us-text {
+    margin-top: 20px;
   }
 
   .member-card-section-2 {
@@ -763,16 +772,10 @@ hr {
   }
 
   .bossing-gif {
-    margin: 0 auto;
+    margin: auto auto;
   }
 
-  .bossing-gif.scarlion {
-    margin: 0 25px 0 65px;
-  }
 
-  .services-section-message .new-section-intro {
-    margin-top: 100px;
-  }
 
   .nav-bubble {
     border-radius: 100px;
@@ -787,7 +790,7 @@ hr {
 
   .sections > .introduction-sections {
     display: grid;
-    grid-row-gap: 160px;
+    grid-row-gap: 80px;
   }
 
   .guilds.twelve-column-grid, .requirements-boxes-container {
@@ -795,7 +798,7 @@ hr {
     grid-template-columns: repeat(4,1fr);
     grid-auto-rows: minmax(100px, auto);
     grid-column-gap: 20px;
-    max-width: 400px;
+    max-width: 872px;
     margin: 0 auto;
   }
 
