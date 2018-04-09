@@ -120,6 +120,11 @@ a:link { /* - a normal, unvisited link */
   grid-row-gap: 40px;
 }
 
+.sections > .members-sections > .member-section {
+  display: grid;
+  grid-row-gap: 80px;
+}
+
 .sections > .members-sections {
   display: grid;
   grid-row-gap: 80px;
@@ -558,8 +563,8 @@ hr {
   background-image: url("https://maplelegends.com/avatar/create.php?name=DDemonScythe");
 }
 
-.member-image.bishirl {
-  background-image: url("https://maplelegends.com/avatar/create.php?name=BishIRL");
+.member-image.ohviviho {
+  background-image: url("https://maplelegends.com/avatar/create.php?name=ohviviho");
 }
 
 .member-card {
@@ -741,7 +746,7 @@ hr {
   .our-mission-text {
     grid-row: 2;
   }
-
+  
   .our-mission-text, .about-us-text {
     margin-top: 20px;
   }
