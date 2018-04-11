@@ -1,7 +1,7 @@
 
-CountDownTimer('03/18/2018 4:32 PM EST', 'countdown1');
-CountDownTimer('03/23/2018 9:32 PM EST', 'countdown2');
-CountDownTimer('03/25/2018 7:16 PM EST', 'countdown3');
+CountDownTimer('04/18/2018 4:32 PM UTC-4', 'countdown1');
+CountDownTimer('04/20/2018 9:32 PM UTC-4', 'countdown2');
+CountDownTimer('04/11/2018 4:38 AM UTC-4', 'countdown3');
 
 function CountDownTimer(dt, id)
 {
@@ -28,10 +28,17 @@ function CountDownTimer(dt, id)
     var minutes = Math.floor((distance % _hour) / _minute);
     var seconds = Math.floor((distance % _minute) / _second);
 
-    document.getElementById(id).innerHTML = days + 'days ';
-    document.getElementById(id).innerHTML += hours + 'hrs ';
-    document.getElementById(id).innerHTML += minutes + 'mins ';
-    document.getElementById(id).innerHTML += seconds + 'secs';
+    document.getElementById(id).innerHTML = days + ' Day : ';
+    document.getElementById(id).innerHTML += hours + ' Hour : ';
+    document.getElementById(id).innerHTML += minutes + ' Mins';
+    if(days==0){
+      document.getElementById(id).innerHTML = '';
+      document.getElementById(id).innerHTML += hours + ' Hour : ';
+      document.getElementById(id).innerHTML += minutes + ' Min : ';
+      document.getElementById(id).innerHTML += seconds + ' Secs';
+
+      return;
+    }
   }
 
   timer = setInterval(showRemaining, 1000);
