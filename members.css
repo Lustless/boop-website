@@ -610,6 +610,10 @@ hr {
   color: var(--booper-color);
 }
 
+.timer {
+  font-size: 22px;
+}
+
 .strikethrough {
   text-decoration: line-through;
 }
