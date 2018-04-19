@@ -713,11 +713,6 @@ hr {
   transition: .35s;
 }
 
-.services-sections span {
-  cursor: pointer;
-  display: inline-block;
-}
-
 .label {
   background-color: var(--booper-color);
   border-radius: 2.5px;
