@@ -695,12 +695,41 @@ hr {
   height: 45px;
   margin-top: 15px;
   background-color: white;
+  cursor: pointer;
+}
+
+.services-sections a {
+  color: var(--booper-color);
+}
+
+.services-sections a:hover {
+  color: white;
+  transition: .35s;
 }
 
 .services-sections button:hover {
   background-color: var(--booper-color);
   color: white;
   transition: .35s;
+}
+
+.services-sections span {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.label {
+  background-color: var(--booper-color);
+  border-radius: 2.5px;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-family: 'Source Sans Pro';
+  font-weight: 600;
+  color: white;
+  margin-right: 5px;
+  width: -moz-min-content;
+  width: -webkit-min-content;
+  width: min-content;
 }
 
 
@@ -746,7 +775,7 @@ hr {
   .our-mission-text {
     grid-row: 2;
   }
-  
+
   .our-mission-text, .about-us-text {
     margin-top: 20px;
   }
