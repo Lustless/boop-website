@@ -702,13 +702,12 @@ hr {
   color: var(--booper-color);
 }
 
-.services-sections a:hover {
-  color: white;
+.services-sections button:hover {
+  background-color: var(--booper-color);
   transition: .35s;
 }
 
-.services-sections button:hover {
-  background-color: var(--booper-color);
+.services-sections button:hover a{
   color: white;
   transition: .35s;
 }
