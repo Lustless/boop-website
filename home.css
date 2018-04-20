@@ -577,6 +577,8 @@ hr {
 
 .member-card .quote {
   margin-top: 10px;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 .member-card h3 {
