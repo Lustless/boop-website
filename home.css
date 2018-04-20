@@ -543,8 +543,8 @@ hr {
   background-image: url("https://maplelegends.com/avatar/create.php?name=xTina");
 }
 
-.member-image.lindarling {
-  background-image: url("https://maplelegends.com/avatar/create.php?name=Lindarling");
+.member-image.balut {
+  background-image: url("https://maplelegends.com/avatar/create.php?name=Balut");
 }
 
 .member-image.lustless {
@@ -605,7 +605,7 @@ hr {
   color: var(--boop-color);
 }
 
-.member-card.lindarling h3 {
+.member-card.balut h3 {
   color: var(--booper-color);
 }
 
