@@ -736,10 +736,10 @@ hr {
   }
 }
 
-/* If the screen size is 400px or less, set stuff to whatever I said */
+/* If the screen size is less than 308 and more than 300px, set stuff to whatever I said */
 
 
-@media only screen and (min-width: 300px) and (max-width: 872px) {
+@media only screen and (min-width: 308px) and (max-width: 872px) {
 
   .twelve-column-grid { /* makes something have a 12 column grid */
       display: grid;
