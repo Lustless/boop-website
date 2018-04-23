@@ -731,8 +731,8 @@ hr {
 /* If the screen size is 308px or less, set stuff to whatever I said */
 @media only screen and (max-width: 308px) {
 
-  .prices {
-    width: auto;
+  .bossing-prices .prices {
+    display: flex;
     margin-left: 16px;
     margin-right: 16px;
   }
@@ -813,8 +813,6 @@ hr {
   .bossing-gif {
     margin: auto auto;
   }
-
-
 
   .nav-bubble {
     border-radius: 100px;
