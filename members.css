@@ -646,6 +646,15 @@ hr {
   padding-left: 0;
 }
 
+
+/* If the screen size is 308px or less, set stuff to whatever I said */
+@media only screen and (max-width: 308px) {
+
+  .bossing-prices .prices {
+    width: auto;
+  }
+}
+
 /* If the screen size is 400px or less, set stuff to whatever I said */
 @media only screen and (min-width: 300px) and (max-width: 872px) {
 

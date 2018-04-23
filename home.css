@@ -732,9 +732,7 @@ hr {
 @media only screen and (max-width: 308px) {
 
   .bossing-prices .prices {
-    display: flex;
-    margin-left: 16px;
-    margin-right: 16px;
+    width: auto;
   }
 }
 
