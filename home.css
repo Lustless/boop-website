@@ -729,7 +729,7 @@ hr {
 
 
 /* If the screen size is 308px or less, set stuff to whatever I said */
-@media only screen and (max-width: 308px) {
+@media only screen and (max-width: 307px) {
 
   .bossing-prices .prices {
     width: auto;
