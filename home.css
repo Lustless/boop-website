@@ -360,7 +360,7 @@ a:hover {
 .prices {
   border-top: 1px solid #979797;
   border-bottom: 1px solid #979797;
-  width: 307px;
+  width: 320px;
   padding-top: 10px;
   padding-bottom: 10px;
   color: #FF7BA5;
@@ -728,18 +728,10 @@ hr {
 }
 
 
-/* If the screen size is 308px or less, set stuff to whatever I said */
-@media only screen and (min-width: 1px) and (max-width: 307px) {
-
-  .bossing-prices .prices {
-     width: auto;
-  }
-}
-
 /* If the screen size is less than 308 and more than 300px, set stuff to whatever I said */
 
 
-@media only screen and (min-width: 308px) and (max-width: 872px) {
+@media only screen and (min-width: 308px) and (max-width: 872px), only screen and (max-width: 360px) {
 
   .twelve-column-grid { /* makes something have a 12 column grid */
       display: grid;
@@ -849,5 +841,13 @@ hr {
 
   .alliances {
     margin-bottom: 40px;
+  }
+}
+
+/* If the screen size is 360px or less, set stuff to whatever I said */
+@media only screen and (max-width: 360px) {
+
+  .bossing-prices .prices {
+     width: auto;
   }
 }
