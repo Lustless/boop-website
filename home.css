@@ -318,7 +318,7 @@ a:hover {
 }
 
 .bossing-section {
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 55px;
 }
 
