@@ -287,7 +287,7 @@ a:hover {
 
 .about-us-image {
   grid-column: span 6;
-  background-image: url("https://media.giphy.com/media/XIOPwyK8C4bJFsu2PV/giphy.gif");
+  background-image: url("./cloud-heart.gif");
   background-size: auto 100%;
   background-position: center;
   overflow: hidden;
@@ -297,7 +297,7 @@ a:hover {
 
 .our-mission-image {
   grid-column: 7/13;
-  background-image: url("./berry_farm_picture.jpg");
+  background-image: url("./guild-cake.gif");
   background-size: auto 100%;
   background-position: center;
   overflow: hidden;

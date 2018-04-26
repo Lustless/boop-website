@@ -205,7 +205,7 @@ a:hover {
   background-color: #F4F7F8;
   height: 600px;
   width: 100%;
-  background-image: url("./members-banner.png");
+  background-image: url("./tina-gen20.gif");
   margin-top: 40px;
   background-size: auto 100%;
   overflow: hidden;
@@ -213,6 +213,7 @@ a:hover {
   margin-bottom: 160px;
   background-position: center center;
   background-size: cover;
+  filter: saturate(125%);
 }
 
 
