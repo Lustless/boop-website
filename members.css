@@ -245,7 +245,6 @@ a:hover {
   grid-gap: 55px;
 }
 .bossing-gif {
-  height: 100px;
   align-self: start;
   justify-self: end;
   width: auto;
@@ -715,7 +714,10 @@ hr {
 
 /* If the screen size is 360px or less, set stuff to whatever I said */
 @media only screen and (max-width: 360px) {
-
+  .sections > .services-sections > .services-section-components {
+  display: grid;
+  grid-row-gap: 90px !important;
+  }
   .bossing-prices .prices {
      width: auto;
   }
