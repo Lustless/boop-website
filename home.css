@@ -249,7 +249,7 @@ a:hover {
   margin: auto auto;
   line-height: 136px;
   color: var(--boop-color);
-  margin-top: 90px;
+  margin-top: 90px !important;
 }
 
 .nav-bubble-text {
@@ -324,7 +324,6 @@ a:hover {
 }
 
 .bossing-gif {
-  height: 100px;
   align-self: start;
   justify-self: end;
   width: auto;
@@ -742,7 +741,9 @@ hr {
       max-width: 872px;
       margin: 0 auto;
   }
-
+  .nav-bubble{
+     margin-top: 90px !important;
+  }
   .new-section-intro,
   .member-card,
   .about-us-image,
@@ -847,7 +848,10 @@ hr {
 
 /* If the screen size is 360px or less, set stuff to whatever I said */
 @media only screen and (max-width: 360px) {
-
+  .sections > .services-sections > .services-section-components {
+  display: grid;
+  grid-row-gap: 90px !important;
+  }
   .bossing-prices .prices {
      width: auto;
   }
