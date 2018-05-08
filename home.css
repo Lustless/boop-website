@@ -562,8 +562,8 @@ hr {
   background-image: url("https://maplelegends.com/avatar/create.php?name=DDemonScythe");
 }
 
-.member-image.ohviviho {
-  background-image: url("https://maplelegends.com/avatar/create.php?name=ohviviho");
+.member-image.tweetie {
+  background-image: url("https://maplelegends.com/avatar/create.php?name=Tweetie");
 }
 
 .member-card {
@@ -610,7 +610,7 @@ hr {
   color: var(--booper-color);
 }
 
-.member-card.bishirl h3 {
+.member-card.tweetie h3 {
   color: var(--booper-color);
 }
 
