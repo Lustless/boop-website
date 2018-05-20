@@ -445,7 +445,7 @@ hr {
 
 .footer {
   height: 500px;
-  background: linear-gradient(rgba(255, 123, 165, 0.5),rgba(255, 123, 165, 0.5)), url("./christmas-picture.png");
+  background: linear-gradient(rgba(255, 123, 165, 0.65),rgba(255, 123, 165, 0.65)), url("./cloud-heart.png");
   width: 100%;
   background-size: 100% auto;
   background-position: center;
