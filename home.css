@@ -542,8 +542,8 @@ hr {
   background-image: url("https://maplelegends.com/avatar/create.php?name=xTina");
 }
 
-.member-image.katrinaa {
-  background-image: url("https://maplelegends.com/avatar/create.php?name=Katrinaa");
+.member-image.yiizuz {
+  background-image: url("https://maplelegends.com/avatar/create.php?name=MaybeYiizuz");
 }
 
 .member-image.lustless {
@@ -583,26 +583,6 @@ hr {
 .member-card h3 {
   text-align: center;
   margin-bottom: 0px;
-  color: var(--boop-color);
-}
-
-.member-card.flora h3 {
-  color: var(--boop-color);
-}
-
-.member-card.gamecube h3 {
-  color: var(--boop-color);
-}
-
-.member-card.xtina h3 {
-  color: var(--boop-color);
-}
-
-.member-card.will h3 {
-  color: var(--boop-color);
-}
-
-.member-card.lustless h3 {
   color: var(--boop-color);
 }
 
