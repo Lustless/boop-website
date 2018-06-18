@@ -130,6 +130,12 @@ b {
   display: grid;
 }
 
+.scrollguide {
+  grid-column: span 12;
+  width: 100%;
+  /**width:1350px;*/
+}
+
 .twelve-column-grid { /* makes something have a 12 column grid */
     display: grid;
     grid-template-columns: repeat(12,1fr);
@@ -147,8 +153,6 @@ b {
   grid-row-gap: 10px;
   max-width: 1200px;
 }
-
-
 
 .header {
   align: center;
@@ -185,7 +189,8 @@ input:checked + .overlay-container > .twelve-column-grid-overlay {
   font-size: 18px;
   font-weight: bold;
   border: 0px transparent;
-  width: 140px;
+  margin-left:30px;
+  margin-right: 30px;
   margin-top: 20px;
   text-decoration: none;
   background-color: white;
@@ -721,5 +726,19 @@ hr {
   }
   .bossing-prices .prices {
      width: auto;
+  }
+}
+
+/* If the screen size is 475px or less, set stuff to whatever I said */
+@media only screen and (max-width: 475px) {
+  .nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .nav-bar > button {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
