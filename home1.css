@@ -876,12 +876,33 @@ hr {
     margin-top: 20px;
   }
 
-  .member-card-section-2 {
+  .member-card-section-2,
+  .twelve-column-grid-overlay,
+  .scroll-card.thirty-percent,
+  .scroll-card.sixty-percent,
+  .scroll-card.hundred-percent {
     display: none;
   }
 
-  .twelve-column-grid-overlay {
-    display: none;
+  .scrollguide-cards.twelve-column-grid {
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+
+  .scroll-card > .scroll-image {
+    opacity: 1;
+  }
+
+  .scroll-card:hover {
+    margin-top: 0px;
+  }
+
+  .scroll-card.ten-percent {
+    box-shadow: 0 20px 50px 0 #E4C978;
+  }
+
+  .scroll-card.ten-percent {
+    width: 285px;
   }
 
   .member-card-section .member-card {
