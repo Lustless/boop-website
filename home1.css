@@ -582,6 +582,10 @@ hr {
   background-image: url("https://maplelegends.com/avatar/create.php?name=Tweetie");
 }
 
+.member-image.ohviviho {
+  background-image: url("https://maplelegends.com/avatar/create.php?name=ohviviho");
+}
+
 .member-card {
   grid-column: span 3;
 }
