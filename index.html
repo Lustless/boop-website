@@ -388,25 +388,29 @@ Mages: Bishops, Ice Lightning, and Fire Poisons.
 
           </div>
        </div>
- <!--
+
         <div class="alliances-sections">
           <div class="alliances-section">
             <div class="alliance-area twelve-column-grid">
               <div class="new-section-intro">
-                <h1>We're Allianced With</h1>
+                <h1>We're Allianced With...</h1>
               </div>
             </div>
-            <div class="alliances-section-components twelve-column-grid">
-              <div class="alliances image-1">
+            <div id="alliances-section-components" class="alliances-section-components alliances-column-grid">
+              <div class="boop alliances image-1">
               </div>
-              <div class="alliances image-2">
+              <div class="booper alliances image-2">
               </div>
-              <div class="alliances image-3">
+              <div class="boop alliances image-3">
+              </div>
+              <div class="boop alliances image-4">
+              </div>
+              <div class="booper alliances image-5">
               </div>
             </div>
           </div>
         </div>
-      -->
+
 
         <div class="members-sections">
           <div class="member-section">
@@ -498,7 +502,12 @@ you ain’t never alone through blood, sweat, tears, or poop!"</p>
                 <h3>Luscious</h3>
                 <p>Jr Leader</p>
                 <p>Night Lord</p>
-                <p class="quote">" "</p>
+                <p class="quote">"Boopy di boop <br>
+                  Boop diddy boop<br>
+                  Boop di boop di boop<br>
+                  Boop di boopty<br>
+                  Boopty boop"
+               </p>
               </div>
 
             </div>
@@ -568,4 +577,22 @@ you ain’t never alone through blood, sweat, tears, or poop!"</p>
     <div class="end-footer-color boopest">
     </div>
   </body>
+  <script>
+    const setupAnimationClassForId = id => {
+        const section = document.getElementById(id);
+        const sectionRect = section.getBoundingClientRect();
+        const isVisible = (sectionRect.height - sectionRect.y) > 0
+          && (sectionRect.height - sectionRect.y) < (2 * sectionRect.height);
+        if (isVisible && section.className.indexOf("visible") === -1) {
+            section.className += " visible";
+        } else if (!isVisible && section.className.indexOf("visible") !== -1) {
+            section.className.replace(" visible", "");
+        }
+    }
+
+    document.body.onscroll = () => {
+      setupAnimationClassForId("alliances-section-components");
+    }
+
+  </script>
 </html>
