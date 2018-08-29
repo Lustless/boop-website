@@ -110,12 +110,16 @@ a:link { /* - a normal, unvisited link */
   grid-row-gap: 80px;
 }
 
-.sections > .scrollguide-sections > .scrollguide-section {
+.sections > .scrollguide-sections {
   display: grid;
   grid-row-gap: 80px;
 }
 
-.sections > .recruitment-sections > .recruitment-section-components{
+.sections > .scrollguide-sections > div {
+  width: 100%;
+}
+
+.sections > .recruitment-sections > .recruitment-section-components {
   display: grid;
   grid-row-gap: 80px;
   margin-bottom: 80px;
@@ -503,10 +507,22 @@ hr {
   background-color: lightgrey;
 }
 
+.scrollguide-cards {
+  opacity: 0;
+  transition: all 1s;
+  transform: translateY(75px);
+  transform: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1),opacity 0.3s ease-in,-webkit-transform 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.scrollguide-cards.visible {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
 .alliances-section-components {
   opacity: 0;
   transition: all 1s;
-  transform: translateY(50px);
+  transform: translateY(75px);
   transform: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1),opacity 0.3s ease-in,-webkit-transform 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
